@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jan 29 16:39:13 2017
+
+@author: elizabethsizemore
+"""
+
+#Elizabeth Sizemore
+#HW 1 prob 2
+
+
+from math import pi,pow
+
+
+
+#Newton's Gravitational constant (m^3/kg*s^2)
+G=6.67E-11
+
+#Mass of the Earth (kg)
+M=5.97E24
+
+#Radius of Earth (m)
+R=6371000
+
+t=int(input("Please enter how frequently the satelite should orbit the planet (in minutes):"))
+T=t*60
+
+#equation for altitude (m)
+h=pow(((G*M*(pow(T,2)))/(4*(pow(pi, 2)))), (1/3)) - R
+
+
+print ('The altitude in meters is:',h)
+

@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jan 29 16:13:23 2017
+
+@author: elizabethsizemore
+"""
+
+#Elizabeth Sizemore
+#HW 1 prob1
+#converting integer to binary
+
+integer=int(input("Please enter an integer:"))
+
+#defining the function of converting to binary
+def convert_to_binary (n):
+    if n>1:
+        convert_to_binary(n//2) #continuously divide by 2
+    print (n%2, end = '')#printing the remainder of the value in order
+   
+#applying the function to the desired integer 
+convert_to_binary (integer)
